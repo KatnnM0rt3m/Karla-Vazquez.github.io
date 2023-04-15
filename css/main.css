@@ -1,0 +1,249 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size:  13px;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    
+}
+/*Navegación*/
+header{
+    background-color: none;
+    /*width - ancho /// height-alto */
+    width: 100%;
+    height: 60px;
+    align-items: end;
+}
+
+header nav{
+   background-color: none;
+   display: flex;
+   /*Justificar hacia la dereccha*/
+   justify-content: flex-end; 
+}
+
+
+/*Aquí por qué el .nav?*/
+header nav .nav-right-section{ 
+   width: 380px;
+   height: auto;
+   display: flex;
+   /*Eliminar puntitos*/
+   list-style: none;
+   justify-content: end;
+   align-items: center;
+
+}
+
+a{
+    text-decoration: none; /*Esto borra la raya debajo del gmail images pues es ancla*/
+    cursor: pointer;
+}
+
+nav .nav-right-section a{
+    margin-right: 20px; /*Espacio entre items del head*/
+    color: black;
+    
+}
+
+nav .nav-right-section .menu{
+    background-image: url(https://lh3.googleusercontent.com/ogw/AAEL6sh29Mzk1cWu7jmHMVdU1q48ReN01RIkOS7NxiBR2B0=s64-c-mo);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-size: contain;   
+    margin-right: 7px;
+}
+/**Icono menú*/
+nav .nav-right-section img{
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+}
+/************************************************/
+
+/*Main*/
+
+main{
+    margin-top: 50px;
+    background-color: none;
+    text-align: center;
+}
+/*Sección Logo*/
+main .main-logo{
+    background-color: none;
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+/*LOGO GOOGLE*/
+main .main-logo img{
+    width: 310px;
+    height: 110px;
+    
+}
+
+/*Sección Input*/
+main .main-input{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+
+main .main-input-container{
+    width: 500px;
+    border-radius:80px;
+    border: 1px solid #dfe1e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input input{
+    border: none;
+    width: 450px;
+    height: 40px;
+    outline: none;
+}
+
+
+/*Sombra de botón :hover*/
+main .main-input-container:hover{
+    box-shadow: 2px 2px 2px #dfe1e5;
+}
+/*LUPITA*/
+main .main-input .search-icon{
+    background-image: url("https://img.icons8.com/android/24/000000/search.png");
+    background-position: center;
+    background-size: contain;
+    width: 15px;
+    background-repeat: no-repeat;
+    height: 15px;
+}
+
+/*MICRÓFONO*/
+main .main-input .micro-icon{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png");
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+main .main-input .micro-icon{
+    margin-right: 20px;
+}
+
+
+
+
+
+/*CÁMARA*/
+main .main-input .cam-icon{
+    background-image: url("https://w7.pngwing.com/pngs/539/607/png-transparent-google-camera-hd-logo-thumbnail.png");
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+main .main-input .cam-icon{
+    margin-right: 20px;
+}
+
+
+main .main-buttons{
+    width: 550px;
+    margin: 0 auto;
+}
+
+main .main-buttons div{
+    display: inline-block;
+}
+
+main .main-buttons button{
+    border: none;
+}
+
+
+main .main-buttons button:hover{
+    box-shadow: 2px 2px 2px #dfe1e5;
+}
+main .main-buttons .Google-Search{
+    margin-right: 10px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #dadce0;
+    color: #202124;
+    cursor: pointer;
+}
+/*Terminar botones*/
+
+main .main-buttons .im-feeling-lucky{
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #dadce0;
+    color: #202124;
+    cursor: pointer;
+}
+
+/*******************************************/
+/*Footer*/
+
+footer{
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    font-size: 13px;
+    border-top: 1px solid #e4e4e4;
+    /*Footer dividido en columnas*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    /*bottom posiciona el footer*/
+    bottom: 0%;
+}
+
+
+footer ul{
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0px;
+}
+
+
+footer.footer-left{
+    justify-self: left;
+}
+
+
+
+footer.footer-right{
+    justify-self: right;
+}
+
+
+footer ul li a{
+    color: #70757a;
+    margin: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
